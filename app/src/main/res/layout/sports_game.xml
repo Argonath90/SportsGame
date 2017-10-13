@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lternst.courtcounter.SportsGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.lternst.courtcounter.SportsGame">
+
+        <LinearLayout
+            android:id="@+id/layoutG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Gryffindor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/scoreG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="60sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addTenG"
+                android:text="+10 points"
+                android:textStyle="bold"
+                android:textColor="#CB0202"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addFifteenG"
+                android:text="+15 points"
+                android:textStyle="bold"
+                android:textColor="#CB0202"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addSnitchG"
+                android:text="Snitch Catch"
+                android:textStyle="bold"
+                android:textColor="#CB0202"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/layoutG"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.lternst.courtcounter.SportsGame">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Slytherin"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/scoreS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="60sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addTenS"
+                android:text="+10 points"
+                android:textStyle="bold"
+                android:textColor="#107804"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addFifteenS"
+                android:text="+15 points"
+                android:textStyle="bold"
+                android:textColor="#107804"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addSnitchS"
+                android:text="Snitch Catch"
+                android:textStyle="bold"
+                android:textColor="#107804"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:text="dementors on field"
+        android:textSize="20sp"
+        android:onClick="reset"
+        android:textColor="#AAAAAA"/>
+
+</RelativeLayout>
